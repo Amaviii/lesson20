@@ -33,10 +33,16 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
-
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.fragment:fragment-ktx:1.8.9")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
